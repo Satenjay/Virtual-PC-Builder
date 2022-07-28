@@ -1,0 +1,87 @@
+import java.util.Scanner;
+
+public class P1_Class {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// TODO Auto-generated method stub
+		//*************Welcome Note*******************
+System.out.println("Welcome to Virtual PC Builder" +"\n" + "Please enter your preference ");
+System.out.println("a)Normal PC b)Gaming PC" );
+String s = "";
+Scanner sc = new Scanner(System.in);
+s = sc.nextLine();
+int price = 0;
+//*************Normal PC*********************************
+if(s.equals("a")) {
+//*************Monitor***********************************
+	System.out.println("Select monitor\n a)Zebronics VHD 16inch (5000Rs)\n b)Acer Aopen HD19.5inch (6500)\n c)LG FullHD 22inch (9000)");
+    s=sc.nextLine();
+    if(s.equals("a")) price+=5000;
+    if(s.equals("b")) price+=6500;
+    if(s.equals("c")) price+=9000;
+    
+  //*************CPU***********************************
+    System.out.println("Select CPU\n a)Lenovo Core i3 10th gen (10000Rs)\n b)HP Core i5 6th gen (15000)\n c)Dell i5 11th gen (18000)");
+    s=sc.nextLine();
+    if(s.equals("a")) price+=10000;
+    if(s.equals("b")) price+=15000;
+    if(s.equals("c")) price+=18000;
+    
+    
+    //*************Mouse***********************************
+      System.out.println("Select Mouse\n a)HP X500 smooth (500Rs)\n b)Lenovo 430 Wireless (800)\n c)Dell quant Wireless (1000)");
+      s=sc.nextLine();
+      if(s.equals("a")) price+=500;
+      if(s.equals("b")) price+=800;
+      if(s.equals("c")) price+=1000;
+      
+      
+      //*************Keyboard***********************************
+        System.out.println("Select Keyboard\n a)Zebronic Zeb (500Rs)\n b)HP 100 Wireless (800)\n c)Dell LED Wireless (1500)");
+        s=sc.nextLine();
+        if(s.equals("a")) price+=500;
+        if(s.equals("b")) price+=800;
+        if(s.equals("c")) price+=1500;
+        System.out.println("Price of PC: " + price+"Rs");
+}
+
+//***********************Gaming PC********************************
+else if(s.equals("b")) {
+	//*************Monitor***********************************
+		System.out.println("Select monitor\n a)Zebronics 2k 16inch 100Hz(10000Rs)\n b)Acer 2k HD19.5inch 120Hz (12000)\n c)LG FullHD 4k 22inch 144Hz (20000)");
+	    s=sc.nextLine();
+	    if(s.equals("a")) price+=10000;
+	    if(s.equals("b")) price+=12000;
+	    if(s.equals("c")) price+=20000;
+	    
+	  //*************CPU***********************************
+	    System.out.println("Select CPU\n a)Lenovo Core i5 12th gen 512SSD (20000Rs)\n b)HP Core i7 11th gen 1TD SSD (30000)\n c)Dell Ryzen 7 20Cores (40000)");
+	    s=sc.nextLine();
+	    if(s.equals("a")) price+=20000;
+	    if(s.equals("b")) price+=30000;
+	    if(s.equals("c")) price+=40000;
+	    
+	    
+	    //*************Mouse***********************************
+	      System.out.println("Select Mouse\n a)HP Game Pro (1000Rs)\n b)Lenovo Superfast (1500)\n c)Dell Flash Wireless (2500)");
+	      s=sc.nextLine();
+	      if(s.equals("a")) price+=1000;
+	      if(s.equals("b")) price+=1500;
+	      if(s.equals("c")) price+=2500;
+	      
+	      
+	      //*************Keyboard***********************************
+	        System.out.println("Select Keyboard\n a)Zebronic RGB 100 (800Rs)\n b)HP True Wireless (1200)\n c)Dell LED Wireless (1500)");
+	        s=sc.nextLine();
+	        if(s.equals("a")) price+=500;
+	        if(s.equals("b")) price+=800;
+	        if(s.equals("c")) price+=1500;
+	        System.out.println("Price of PC: " + price+"Rs");
+	
+}
+else System.out.println("Invalid input");
+	}
+
+}
+//*******************************End of Code*************************************************************
